@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang= "en">
+	<head>
+		<title>Form</title>
+		<meta charset = "UTF-8"/>
+		<meta name = "author" content = "Krista Matsila"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body>
+		<header>
+			<nav id = "head">
+				<div id = "logo"><a class = "top-nav-head" href = "index.html">Raptis Rare Books</a></div>
+
+				<div id = "nav-links">
+					<div class = "nav-links"><a class = "top-nav" href = "index.html">Home</a></div>
+					<div class = "nav-links"><a class = "top-nav" href = "books.html">Books</a></div>
+					<div class = "nav-links"><a class = "top-nav" href = "questions.html">Questions</a></div>
+					<div class = "nav-links"><a class = "top-nav" href = "form.html">Queries</a></div>
+				</div>
+			</nav>
+
+			<nav class = "menu-area">
+				<ul>
+					<li><a href = "#">Menu</a>
+						<ul class = "dropdown">
+							<li><a href = "index.html">Home</a></li>
+							<li><a href = "books.html">Books</a></li>
+							<li><a href = "questions.html">Questions</a></li>
+							<li><a href = "form.html">Queries</a></li>	
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<article>
+			<div class = "form-back">
+
+				<!--<div id = "placeholder"></div>-->
+				<div class = form>
+					<div class = "form-head"><h1 id = "form-head">Queries</h1></div>
+					<div id = "form-notes">
+						<p>Please use the form below to contact us with any queries or offers to purchase.</p>
+						<p><em>Fields marked with a "*" are required</em></p>
+					</div>
+				</div>
+			</div>
+
+			<div class = "form-back">
+				<div class = "form">
+					<!--<div class = "form-image">
+						<img class = "form-side-image" src = "general-images/5.jpg" alt = "random_open_books" height = "250"/>
+					</div>-->
+
+					<form class = "form-content">
+						<fieldset>
+							<input class = "personal" id = "name" type = "text" placeholder = "*Name" name = "name" required="required"/>
+
+							<br/><br/>
+
+							<input class = "personal" id = "surname" type = "text" placeholder = "*Surname" name = "surname" required="required"/>
+
+							<br/><br/>
+
+							<input class = "personal" id = "email" type = "email" placeholder = "*Email Address" name = "email" required="required"/>
+
+							<br/><br/>
+
+							<input class = "personal" id = "cell" type = "text" placeholder = "*Phone Number" name = "cell" minlength= "10" maxlength = "10" required="required"/>
+
+							<br/><br/>
+
+							<textarea class = "personal" id = "add" placeholder = "*Query (Eg: which book you would like to purchase)" name = "addtitional_info" rows="4" cols="50" required = "required"></textarea>
+
+							<br/><br/><br/>
+
+							<input id = "btnSubmit" type = "submit" value = "Submit"/>
+							
+						</fieldset>	
+					</form>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<p>© Raptis Rare Books 2022</p>
+		</footer>
+		
+	</body>
+</html>

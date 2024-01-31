@@ -1,0 +1,607 @@
+/*Krista Matsila*/
+
+
+/******************************************************Text******************************************************/
+
+
+
+/***Font Imports***/
+
+@font-face {
+	font-family: Circus;
+	src: url("fonts/TheCircous.ttf");
+}
+
+ @font-face {
+	font-family: Timeless;
+	src: url("fonts/Timeless.ttf");
+}
+
+@font-face{
+	font-family: Germania;
+	src: url("fonts/GermaniaOne-Regular.ttf");
+}
+
+
+/***colors, sizes and fonts***/
+
+p, ul, h1, h2, h3, h4, label{
+	color: #dcdfe4;
+	font-family: Timeless;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+p, ul{
+	font-size: 1.1em;
+}
+
+h3#details{
+	color: white;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	text-shadow: 2px 3px 5px black;
+	font-size: 1.5em;
+}
+
+h1{
+	color: white;
+	font-family: Circus;
+	font-size: 5em;
+	text-align: center;
+	text-shadow: 0px 10px 20px black;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+}
+
+div.nav-links > a, nav{
+	color: #dcdfe4;
+	font-family: Circus;
+}
+
+/******************************************************background colors******************************************************/
+
+
+body{
+	background-color: #111d1e;
+	margin: auto;
+	width: 100%;
+}
+
+div#heading{
+	background-image: url("../general-images/2.jpg");
+}
+
+div.form-back{
+	background-color: #111d1e;
+}
+
+/*div.books-content:nth-child(odd) {
+  background: #2b292b;
+  color: white;
+}
+
+div.question-content:nth-child(odd) {
+  background: #2b292b;
+  color: white;
+}*/
+
+header{
+	z-index: 100;
+}
+
+div.nav-links > a:focus{
+	text-decoration: underline;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+footer{
+	min-width: 100%;
+}
+
+/******************************************************Main/Top Navigation******************************************************/
+
+
+nav#head{
+	height: 3em;
+	width: 100%;
+	/*border: solid 2px black;*/
+	position: fixed;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	background-color: #111d1e;
+	grid-gap: 5%;
+}
+
+div#nav-links{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/*border: solid 2px white;*/
+}
+
+div#logo, div.nav-links{
+	/*border: solid 2px black;*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+a.inner-options, a.top-nav, a.top-nav-head{
+	text-decoration: none;
+	color: #dcdfe4;
+}
+
+a.top-nav-head:hover{
+	cursor: pointer;
+}
+
+a.inner-options, a.top-nav:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+/***dropdown menu***/
+
+nav.menu-area{
+	display: none;
+	position: fixed;
+	top: 0;
+
+}
+
+nav{
+	width: 100%;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav.menu-area a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #111d1e;
+	color: white;
+	height: 50px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 0px;
+	font-family: Circus;
+}
+
+nav.menu-area a:hover{
+	background: white;
+  color: #111d1e;
+}
+
+nav.menu-area ul{
+	list-style: none;
+	display: flex;
+}
+
+nav.menu-area li{
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+nav.menu-area li:hover .dropdown > li{
+	display: block;
+	top: 0;
+}
+
+ul.dropdown li{
+	display: none;
+	position: relative;
+}
+
+ul.dropdown{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+
+/******************************************************Index/Home Page******************************************************/
+
+
+/***Intro Page***/
+
+
+div.content, div.books-content, div.question-content{
+	width: 100%;
+	min-height: 95vh;
+/*	border: solid 2px black;*/
+}
+
+div#heading{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+h1, h3{
+	margin: 0.2em;
+}
+
+
+/***Background Page***/ 
+
+
+div#background-one, div#background-two{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+div.side-content{
+	/*border: solid 2px green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+div.side-image{
+	/*border: solid 2px green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img.side-image, img.books-side-img, img.form-side-image{
+	border-radius: 2em;;
+   	box-shadow: 0.1em 0.1em 1em 0.5em #44535e;
+}
+
+img.books-side-image img.side-image{
+	z-index: -1;
+}
+
+div.side-content-p{
+	/*border: solid 2px orange;*/
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+
+/******************************************************Questions Page******************************************************/
+
+
+div.question{
+	/*border: solid 2px green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+div.answer{
+	/*border: solid 2px green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p.answer-p, h2.question-p{
+	/*border: solid 2px orange;*/
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1em;
+}
+
+h2.question-p{
+	width: 100%;
+	color: white;
+}
+
+div.question-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 95vh;
+	/*border: solid 2px blue;*/
+	min-width: 100%;
+}
+
+div.question-q{
+	background-color: white;
+}
+
+
+/******************************************************Books Page******************************************************/
+
+
+div.book-info{
+	display: flex;
+	flex-direction: column;
+/*	border: solid 2px orange;*/
+	flex-wrap: wrap;
+	margin-left: 0.5em;
+	width: 80%;
+	padding: 1em;
+}
+
+p{
+	margin: 0.3em;
+}
+
+ul{
+	list-style-type: square;
+}
+
+div.books-side-content{
+	/*border: solid 2px green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.books-side-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.books-content{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+h2.heading-detail{
+	margin-top: 0;
+}
+
+
+/******************************************************Form Page******************************************************/
+
+
+div.form-back{
+	width: 100%;
+	/*border: solid 2px black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+fieldset{
+	min-height: 50vh;
+	min-width: 70%;
+	/*border: none;*/
+	padding: 1em;
+	margin: 0;
+}
+
+div.form-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: solid 2px blue;*/
+}
+
+form.form-content{
+	padding-left: 0;
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/*div#placeholder{
+	width: 100%;
+	height:3vh
+}*/
+
+div#form-notes, div.form-head{
+	text-align: center;
+	margin: 2em;
+}
+
+div.form-head{
+	margin-bottom: 0;
+}
+
+div#form-notes{
+	margin-bottom: 1em;
+}
+
+input.personal, textarea.personal{
+	width: 100%;
+	height: 3.5em;
+	font-family: Timeless;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	font-weight: bold;
+	border: none;
+}
+
+input#btnSubmit{
+	width: 100%;
+	height: 3.5em;
+	color: white;
+	font-family: Timeless;
+	background-color: black;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	border: none;
+	font-size: 1.1em;
+	padding: 0.5em;
+	font-weight: bold;
+}
+
+input#btnSubmit:hover{
+	background-color: #2b292b;
+	cursor: pointer;
+}
+
+div.form{
+	margin: 1em;
+	min-width: 70%;
+}
+
+
+img{
+	min-width: 60%;
+}
+
+/******************************************************Media Queries******************************************************/
+
+
+@media(max-width: 840px){
+	h1#questions-head, h1#books-head{
+		margin-top: 1em;
+		font-size: 4em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	div#background-one, div#background-two{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	div#background-one > div.side-image{
+		display: none;
+	}
+
+	div#final-content, div#final-image{
+		min-height: 90vh;
+	}
+
+	div.books-content{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
+
+	h2.heading-detail{
+		margin-top: 1em;
+	}
+
+}
+
+@media (max-width: 650px){
+
+	div#logo >a.top-nav-head{
+		display: none;
+	}
+
+	nav#head{
+		grid-template-columns: 1fr;
+	}
+
+	div#logo >a.top-nav-head{
+		display: none;
+	}
+}
+
+@media (max-width: 645px){
+	h1#books-head{
+		font-size: 3em;
+	}
+
+	div.question-content{
+		margin-bottom: 4em;
+	}
+}
+
+@media (max-width: 510px){
+	article{
+		width: 100%;
+	}
+
+	div#nav-links{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		/*border: solid 2px blue;*/
+		width: 100%;
+	}
+
+	nav#head{
+		width: 100%;
+	}
+
+	h1#questions-head, h1#books-head, h1#form-head, h1#home-head{
+		font-size: 2em;
+	}
+
+	div.nav-links{
+		margin: 0.3em;
+	}
+
+
+}
+
+@media (max-width: 400px){
+	img#side-image-final{
+		width: 90%;
+	}
+
+	h1#books-head{
+		font-size: 1.5em;
+	}
+
+	img.books-side-img{
+		width: 90%;
+		height: 90%;
+	}
+
+	/***drop down menu***/
+
+	/*displaying the navs*/
+	nav#head{
+		display: none;
+	}
+
+	nav.menu-area{
+		display: initial;
+		position: fixed;
+		top: 0;
+	}
+	/*************************/
+
+	div#nav-links{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		/*border: solid 2px blue;*/
+		width: 100%;
+	}
+
+	p#menu-p{
+		margin: 0;
+	}
+
+
+}
